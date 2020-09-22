@@ -3,10 +3,11 @@
 <TODO: complete this with an overview of your project>
 
 ## Project Plan
-<TODO: Project Plan
+Project Plan
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* Trello Link: https://trello.com/b/H8cuaUAT/devops-training
+* Google Spreadsheet: https://docs.google.com/spreadsheets/d/1El5EqIXoPMPXIe8cITC4ZG7C2-l7u4OVyhgBg-pQEck/edit?usp=sharing
+
 
 ## Instructions
 
