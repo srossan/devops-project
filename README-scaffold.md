@@ -1,19 +1,20 @@
 # devops-project (scaffold)
 
 # Overview
-This project is to setup a continuous integration for a scaffold project.
-Using GitOps, a CI pipeline is setup to validate/test/lint the source code of the application
+This project is to setup a continuous integration (CI) pipeline for scaffold.
+Using Github action, a CI pipeline is setup to validate/test/lint the source code of the application
 
 # Snapshots
+Snapshots or screenshots were taken to show the progress on deploying the pipeline
 
-# Environment Setup in Azure Cloud Shell
+## Environment Setup in Azure Cloud Shell
 ![history](https://github.com/srossan/devops-project/blob/master/images/devops-proj-setup.png)
 ![virtualenv](https://github.com/srossan/devops-project/blob/master/images/azure-cloud-shell-devops-proj-setup.png)
 
-# Make all
+## Make all
 ![make all](https://github.com/srossan/devops-project/blob/master/images/devops-proj_make-all.png)
 
-# Github Actions results
+## Github Actions results
 ![Github actions passed](https://github.com/srossan/devops-project/blob/master/images/devops-proj-github-actions-passed.png)
 
 ![Python application test with Github Actions](https://github.com/srossan/devops-project/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
