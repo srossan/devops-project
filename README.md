@@ -1,7 +1,12 @@
 # Overview
 
 This project is about creating a python program with machine learning capability, using flask.
-A CD pipeline has been built in Azure pipeline
+Leveraging CI/CD pipelines technology was used to deploy and run the app.
+A CI pipeline was set in Github Actions
+See following README for details
+![README-scaffold.md](README-scaffold.md)
+
+A CD pipeline has been built in Azure pipeline, and using a web app for running the webservice/Flask API.
 
 ## Project Plan
 Project Plan
