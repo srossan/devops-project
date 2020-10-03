@@ -12,10 +12,10 @@ Project Plan
 
 ## Instructions
 
-<TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+* Architectural Diagram (Shows how key parts of the system work)
+![architecture](https://github.com/srossan/devops-project/blob/master/images/cd-diagram.png)
 
-A shell script is used to pass json parameters to the web service, to render a prediction. Following are screenshots of the various steps involved on the deployment of the infrastructure, and run of the program.
+A shell script is used to pass json parameters to the flask ML API, running out of a Azure app service, to render a prediction. Following are screenshots of the various steps involved on the deployment of the infrastructure, and run of the program.
 
 * Project running on Azure App Service
 ![webapp](https://github.com/srossan/devops-project/blob/master/images/Azure-webapp-running.png)
