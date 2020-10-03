@@ -1,5 +1,11 @@
 # devops-project (scaffold)
 
+# Overview
+This project is to setup a continuous integration for a scaffold project.
+Using GitOps, a CI pipeline is setup to validate/test/lint the source code of the application
+
+# Snapshots
+
 # Environment Setup in Azure Cloud Shell
 ![history](https://github.com/srossan/devops-project/blob/master/images/devops-proj-setup.png)
 ![virtualenv](https://github.com/srossan/devops-project/blob/master/images/azure-cloud-shell-devops-proj-setup.png)
