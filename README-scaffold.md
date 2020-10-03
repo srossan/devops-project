@@ -7,14 +7,17 @@ Using Github action, a CI pipeline is setup to validate/test/lint the source cod
 # Snapshots
 Snapshots or screenshots were taken to show the progress on deploying the pipeline
 
-## Environment Setup in Azure Cloud Shell
+## Setup in Azure Cloud Shell
+git clone and python virtual machine setup
 ![history](https://github.com/srossan/devops-project/blob/master/images/devops-proj-setup.png)
 ![virtualenv](https://github.com/srossan/devops-project/blob/master/images/azure-cloud-shell-devops-proj-setup.png)
 
-## Make all
+## Execution
+Following directions from the project, a make all command was executed
 ![make all](https://github.com/srossan/devops-project/blob/master/images/devops-proj_make-all.png)
 
-## Github Actions results
+## Results
+Checking Github actions were successful
 ![Github actions passed](https://github.com/srossan/devops-project/blob/master/images/devops-proj-github-actions-passed.png)
 
 ![Python application test with Github Actions](https://github.com/srossan/devops-project/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
