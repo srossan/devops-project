@@ -8,8 +8,10 @@ Using Github action, a CI pipeline is setup to validate/test/lint the source cod
 Snapshots or screenshots were taken to show the progress on deploying the pipeline
 
 ## Setup in Azure Cloud Shell
-git clone and python virtual machine setup
+Captured the history commands to show what was done to setup the environment
 ![history](https://github.com/srossan/devops-project/blob/master/images/devops-proj-setup.png)
+
+### Setup of the python virtual machine
 ![virtualenv](https://github.com/srossan/devops-project/blob/master/images/azure-cloud-shell-devops-proj-setup.png)
 
 ## Execution
