@@ -18,29 +18,31 @@ Project Plan
 A shell script is used to pass json parameters to the web service, to render a prediction. Following are screenshots of the various steps involved on the deployment of the infrastructure, and run of the program.
 
 * Project running on Azure App Service
+![webapp](https://github.com/srossan/devops-project/blob/master/images/Azure-webapp-running.png)
+
 
 * Project cloned into Azure Cloud Shell
+![git_clone](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-git_clone.png)
 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
+![make_all](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-make_all.png)
 
 * Output of a test run
+![make_test](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-make_test.png)
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+![Azure-Pipelines-setup](https://github.com/srossan/devops-project/blob/master/images/Azure-pipelines-setup.png)
 
 * Running Azure App Service from Azure Pipelines automatic deployment
+![Azure-runs](https://github.com/srossan/devops-project/blob/master/images/Azure-pipelines-runs.png)
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
+* Successful prediction from deployed flask app in Azure Cloud Shell.
+![Prediction](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-prediction.png)
 
 * Output of streamed log files from deployed application
+![Tail_logs1](https://github.com/srossan/devops-project/blob/master/images/Azure-Webapp-tail_log1.png)
+![Tail_logs2](https://github.com/srossan/devops-project/blob/master/images/Azure-Webapp-tail_log2.png)
 
-> 
 
 ## Enhancements
 
