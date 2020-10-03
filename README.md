@@ -1,6 +1,7 @@
 # Overview
 
-<TODO: complete this with an overview of your project>
+This project is about creating a python program with machine learning capability, using flask.
+A CD pipeline has been built in Azure pipeline
 
 ## Project Plan
 Project Plan
@@ -14,7 +15,7 @@ Project Plan
 <TODO:  
 * Architectural Diagram (Shows how key parts of the system work)>
 
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
+A shell script is used to pass json parameters to the web service, to render a prediction. Following are screenshots of the various steps involved on the deployment of the infrastructure, and run of the program.
 
 * Project running on Azure App Service
 
