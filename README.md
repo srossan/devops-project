@@ -62,9 +62,10 @@ As a reference, a commands.sh shell script exists in the repository, and list th
 
 ## Enhancements
 
-For efficiency, I will recommend to run the CI and the CD out of the Azure Devops stack, and ensure the CI pipeline kicks the CD one. As of this current project, they are both independent and running in two different environments. It makes sense to have both running in a single platform.
+For efficiency, I will recommend to run the CI and the CD out of the Azure Devops stack, and ensure the CI pipeline kicks the CD one. As of this current project, they are both independent and running in two different environments. It makes sense to have both running in a single target (platform).
 
-Also, since the Flask ML API is in a docker container, it may be more beneficial to run in a kubernetes environment, which could increase the reliability and scale of the numbers of containers. Having a N+1 architecture could protect the project from failures. Also, having the capability of having a blue/green deployment could manage versioning of the app.
+Also, since the Flask ML API is in a docker container, it may be more beneficial to run in a kubernetes environment, for production purpose, which could increase the reliability and scalability of the numbers of containers. 
+Having a N+1 architecture could protect the app from failures. Also, having the capability of having a blue/green mechanism, could manage versioning of the app.
 
 ## Demo 
 
