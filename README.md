@@ -1,16 +1,21 @@
 # Overview
 
-This project reflects and demonstrates everything learn from the Agile Development with Azure class, part of the DevOps Engineer for Microsoft Azure Nanodegree Program 
+This project reflects and demonstrates everything learn from the Agile Development with Azure class, part of the DevOps Engineer for Microsoft Azure Nanodegree Program.
 
-There are two parts. The first one is about how to setup a Continuous Integration (CI) pipeline in Github. The second is to about how to set a Continuous Delivery (CD) pipeline in Azure. The CD pipeline will deliver a webapp service, listening to any API requests. A submission of various JSON parameters will be send, the API will produce a prediction.
+Project plan and tasks were setup in Trello and Google spreadsheet.
+
+There are two parts. The first one is about how to setup a Continuous Integration (CI) pipeline in Github. The second is to about how to set a Continuous Delivery (CD) pipeline in Azure. The CD pipeline will deliver a webapp service, listening to any API requests. 
+
+A submission of various JSON parameters will be sent to the API, and prediction will be displayed. The output will prove the service is set correctly
 
 
 
 # Project Plan
-Please find the URLs for the trello kanban board and the Google Spreadsheet below:
+Please find the URLs for the trello kanban board and the Google Spreadsheet below.
 
 * Trello: https://trello.com/b/H8cuaUAT/devops-training
 * Google Spreadsheet: https://docs.google.com/spreadsheets/d/1El5EqIXoPMPXIe8cITC4ZG7C2-l7u4OVyhgBg-pQEck/edit?usp=sharing
+
 
 # Pipelines
 
@@ -91,6 +96,8 @@ It is called commands.sh
 For efficiency, I will recommend to run the CI and the CD out of the Azure Devops stack, and ensure the CI pipeline kicks the CD one. As of this current project, they are both independent and running in two different environments. It makes sense to have both running in a single target (platform).
 
 The name of the webservice is hardcoded in various places of the git repository, and the azure pipelines. It could be set more efficiently if we could leverage some kind of variables.
+
+Testing for the API service need to be improved. The incompatibility of the locust module prevented advanced testing. It needs to be resolved.
 
 Also, since the Flask ML API is in a docker container, it may be more beneficial to run in a kubernetes environment, for production purpose, which could increase the reliability and scalability of the numbers of containers. 
 Having a N+1 architecture could protect the app from failures. Also, having the capability of having a blue/green mechanism, could manage versioning of the app.
