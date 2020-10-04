@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Create python virtual machine
-python3 -m venv ~/.udacity-devops
-source ~/.udacity-devops/bin/activate
-cd devops-project
+# Start webapp
+az webapp up -n srossan-flask
+
+# Check logs
+az webapp log tail
