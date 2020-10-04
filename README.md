@@ -1,18 +1,20 @@
 # Overview
 
-This project is to demonstrate the usage of devops tools. There are two parts. The first one is about how to setup a Continuous Integration (CI) pipeline in Github. The second is to about how to set a Continuous Delivery (CD) pipeline in Azure. The CD pipeline will deliver a webapp service, listening to any API requests. A submission of various JSON parameters will be send, the API will produce a prediction.
+This project is to demonstrate the usage of devops tools. 
 
-This project reflects everything learn in the Udacity DevOps Engineer nano-degree.
+There are two parts. The first one is about how to setup a Continuous Integration (CI) pipeline in Github. The second is to about how to set a Continuous Delivery (CD) pipeline in Azure. The CD pipeline will deliver a webapp service, listening to any API requests. A submission of various JSON parameters will be send, the API will produce a prediction.
 
-## Project Plan
-Project Plan
+This project reflects and demonstrates everything learn in the Udacity DevOps Engineer nano-degree.
+
+# Project Plan
+Please find the URL for the trello kanban board and the Google Spreadsheet below:
 
 * Trello Link: https://trello.com/b/H8cuaUAT/devops-training
 * Google Spreadsheet: https://docs.google.com/spreadsheets/d/1El5EqIXoPMPXIe8cITC4ZG7C2-l7u4OVyhgBg-pQEck/edit?usp=sharing
 
-## Instructions
+# Pipelines
 
-### Continuous Integration
+## Continuous Integration
 
 A Continous Integration (CI) pipeline was set in Github Actions. See following README for details
 
@@ -37,7 +39,7 @@ Checking Github actions were successful
 ![Python application test with Github Actions](https://github.com/srossan/devops-project/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 
 
-### Continuous Delivery 
+## Continuous Delivery 
 
 * Architectural Diagram (Shows how key parts of the system work)
 
@@ -81,7 +83,7 @@ A shell script exists in the repository, and list the various commands to run to
 It is called commands.sh
 
 
-## Enhancements
+# Enhancements
 
 For efficiency, I will recommend to run the CI and the CD out of the Azure Devops stack, and ensure the CI pipeline kicks the CD one. As of this current project, they are both independent and running in two different environments. It makes sense to have both running in a single target (platform).
 
@@ -90,7 +92,7 @@ The name of the webservice is hardcoded in various places of the git repository,
 Also, since the Flask ML API is in a docker container, it may be more beneficial to run in a kubernetes environment, for production purpose, which could increase the reliability and scalability of the numbers of containers. 
 Having a N+1 architecture could protect the app from failures. Also, having the capability of having a blue/green mechanism, could manage versioning of the app.
 
-## Demo 
+# Demo 
 
 <TODO: Add link Screencast on YouTube>
 
