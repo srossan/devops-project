@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# Create python virtual machine
-python3 -m venv ~/.udacity-devops
-source ~/.udacity-devops/bin/activate
-cd devops-project
+# Start web app in Azure (URL is https://srossan-flask.azurewebsites.net/)
+az webapp up -n srossan-flask
+
+# tailling log files
+az webapp log tail
