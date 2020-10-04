@@ -23,7 +23,10 @@ Project Plan
 
 ![architecture](https://github.com/srossan/devops-project/blob/master/images/cd-diagram.png)
 
-A shell script is used to pass json parameters to the flask ML API, running out of a Azure app service, to render a prediction. Following are screenshots of the various steps involved on the deployment of the infrastructure, and run of the program.
+Services are built in Microsoft Devops pipelines as a CD pipeline. It builds a webservice, producing an API based on Flask ML.
+A shell script is used to pass json parameters to the flask ML API and return a prediction. 
+
+Following are screenshots of the various steps involved on the deployment of the infrastructure, and run of the program.
 
 * Project running on Azure App Service
 
