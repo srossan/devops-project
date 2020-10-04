@@ -37,10 +37,11 @@ A shell script is used to pass json parameters to the flask ML API, running out 
 * Passing tests that are displayed after running the `make all` command from the `Makefile`
 ![make_all](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-make_all.png)
 
-Note: locust test couldn't run due to the version of Python in Azure Cloud Shell. It looks like there is a requirement for 3.6. The current version is 3.5.3. The locust.py does exist in the repository.
-
 * Output of a test run
 ![make_test](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-make_test.png)
+
+Note: locust test couldn't run due to the version of Python in Azure Cloud Shell. It looks like there is a requirement for 3.6. The current version is 3.5.3. The locust.py does exist in the repository, for reference.
+
 
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 ![Azure-Pipelines-setup](https://github.com/srossan/devops-project/blob/master/images/Azure-pipelines-setup.png)
@@ -54,6 +55,9 @@ Note: locust test couldn't run due to the version of Python in Azure Cloud Shell
 * Output of streamed log files from deployed application
 ![Tail_logs1](https://github.com/srossan/devops-project/blob/master/images/Azure-Webapp-tail_log1.png)
 ![Tail_logs2](https://github.com/srossan/devops-project/blob/master/images/Azure-Webapp-tail_log2.png)
+
+* Commands to use to setup the web service in Azure
+As a reference, a commands.sh shell script exists in the repository, and list the various commands to run to start the webapp, and also to tail the logs.
 
 
 ## Enhancements
