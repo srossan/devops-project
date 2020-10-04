@@ -9,6 +9,7 @@ Snapshots or screenshots were taken to show the progress on deploying the pipeli
 
 ## Setup in Azure Cloud Shell
 Captured the history commands to show what was done to setup the environment
+
 ![history](https://github.com/srossan/devops-project/blob/master/images/devops-proj-setup.png)
 
 ### Setup of the python virtual machine
@@ -16,11 +17,14 @@ Captured the history commands to show what was done to setup the environment
 
 ## Execution
 Following directions from the project, a make all command was executed
+
 ![make all](https://github.com/srossan/devops-project/blob/master/images/devops-proj_make-all.png)
 
 ## Results
-Checking Github actions were successful
+- Checking Github actions were successful
+
 ![Github actions passed](https://github.com/srossan/devops-project/blob/master/images/devops-proj-github-actions-passed.png)
 
+- Code Status
 ![Python application test with Github Actions](https://github.com/srossan/devops-project/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
 

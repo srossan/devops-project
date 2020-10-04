@@ -1,9 +1,15 @@
-setup:
-	python3 -m venv ~/.udacity-devops
-
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
+
+test-ci:
+	python -m pytest -vv test_hello.py
+
+lint-ci:
+	pylint --disable=R,C hello.py
+
+all-ci:
+	install lint-ci test-ci
 
 test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
