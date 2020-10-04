@@ -1,10 +1,10 @@
 # Overview
 
-This project is to demonstrate the usage of devops tools, in Github and Azure pipelines. 
+This project reflects and demonstrates everything learn from the Agile Development with Azure class, part of the DevOps Engineer for Microsoft Azure Nanodegree Program 
 
 There are two parts. The first one is about how to setup a Continuous Integration (CI) pipeline in Github. The second is to about how to set a Continuous Delivery (CD) pipeline in Azure. The CD pipeline will deliver a webapp service, listening to any API requests. A submission of various JSON parameters will be send, the API will produce a prediction.
 
-This project reflects and demonstrates everything learn from the Agile Development with Azure class, part of the DevOps Engineer for Microsoft Azure Nanodegree Program 
+
 
 # Project Plan
 Please find the URLs for the trello kanban board and the Google Spreadsheet below:
@@ -20,6 +20,7 @@ A Continous Integration (CI) pipeline is set in Github Actions.
 
 * Setup in Azure Cloud Shell
 Captured the history commands to show what was done to setup the environment (ssh keys were already setup in the github repository).
+
 ![history](https://github.com/srossan/devops-project/blob/master/images/devops-proj-setup.png)
 
 * Setup of the python virtual machine
