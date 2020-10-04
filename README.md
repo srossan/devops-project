@@ -32,7 +32,7 @@ A Continous Integration (CI) pipeline is set in Github Actions.
 ![virtualenv](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-python_virtualmachine.png)
 
 * Execution
-Following directions from the instructions, a make all command was executed
+Following directions from the instructions, a make all command was executed (for the ci portion, the exact command is make all-ci)
 
 ![make all](https://github.com/srossan/devops-project/blob/master/images/devops-proj_make-all.png)
 
