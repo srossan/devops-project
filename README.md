@@ -1,14 +1,8 @@
 # Overview
 
-This project is about creating a python program with machine learning capability, using flask.
-Leveraging CI/CD pipelines technology was used to deploy and run the app.
+This project is to demonstrate the usage of devops tools. There are two parts. The first one is about how to setup a Continuous Integration (CI) pipeline in Github. The second is to about how to set a Continuous Delivery (CD) pipeline in Azure. The CD pipeline will deliver a webapp service, listening to any API requests. A submission of various JSON parameters will be send, the API will produce a prediction.
 
-A Continous Integration (CI) pipeline was set in Github Actions
-See following README for details
-
-![README-scaffold.md](README-scaffold.md)
-
-A Continuous Distribution (CD) pipeline has been built in Azure pipeline, and using a web app for running the webservice/Flask API.
+This project reflects everything learn in the Udacity DevOps Engineer nano-degree.
 
 ## Project Plan
 Project Plan
@@ -16,17 +10,43 @@ Project Plan
 * Trello Link: https://trello.com/b/H8cuaUAT/devops-training
 * Google Spreadsheet: https://docs.google.com/spreadsheets/d/1El5EqIXoPMPXIe8cITC4ZG7C2-l7u4OVyhgBg-pQEck/edit?usp=sharing
 
-
 ## Instructions
+
+### Continuous Integration
+
+A Continous Integration (CI) pipeline was set in Github Actions. See following README for details
+
+* Setup in Azure Cloud Shell
+Captured the history commands to show what was done to setup the environment
+![history](https://github.com/srossan/devops-project/blob/master/images/devops-proj-setup.png)
+
+* Setup of the python virtual machine
+
+![virtualenv](https://github.com/srossan/devops-project/blob/master/images/azure-cloud-shell-devops-proj-setup.png)
+
+* Execution
+Following directions from the project, a make all command was executed
+
+![make all](https://github.com/srossan/devops-project/blob/master/images/devops-proj_make-all.png)
+
+* Results
+Checking Github actions were successful
+
+![Github actions passed](https://github.com/srossan/devops-project/blob/master/images/devops-proj-github-actions-passed.png)
+
+![Python application test with Github Actions](https://github.com/srossan/devops-project/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
+
+
+### Continuous Delivery 
 
 * Architectural Diagram (Shows how key parts of the system work)
 
 ![architecture](https://github.com/srossan/devops-project/blob/master/images/cd-diagram.png)
 
-Services are built in Microsoft Devops pipelines as a CD pipeline. It builds a webservice, producing an API based on Flask ML.
-A shell script is used to pass json parameters to the flask ML API and return a prediction. 
+A python program is pushed through the CD pipeline, set an API web service, ready to deliver a prediction based on various parameters.
+A shell script is used to pass JSON parameters to the API. 
 
-Following are screenshots of the various steps involved on the deployment of the infrastructure, and run of the program.
+Following are the screenshots of the various steps involved on the CD deployment, and run of the program.
 
 * Project running on Azure App Service
 
@@ -43,9 +63,6 @@ Following are screenshots of the various steps involved on the deployment of the
 * Output of a test run
 ![make_test](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-make_test.png)
 
-Note: locust test couldn't run due to the version of Python in Azure Cloud Shell. It looks like there is a requirement for 3.6. The current version is 3.5.3. The locust.py does exist in the repository, for reference.
-
-
 * Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 ![Azure-Pipelines-setup](https://github.com/srossan/devops-project/blob/master/images/Azure-pipelines-setup.png)
 
@@ -60,12 +77,15 @@ Note: locust test couldn't run due to the version of Python in Azure Cloud Shell
 ![Tail_logs2](https://github.com/srossan/devops-project/blob/master/images/Azure-Webapp-tail_log2.png)
 
 * Commands to use to setup the web service in Azure
-As a reference, a commands.sh shell script exists in the repository, and list the various commands to run to start the webapp, and also to tail the logs.
+A shell script exists in the repository, and list the various commands to run to start the webapp, and also to tail the logs.
+It is called commands.sh
 
 
 ## Enhancements
 
 For efficiency, I will recommend to run the CI and the CD out of the Azure Devops stack, and ensure the CI pipeline kicks the CD one. As of this current project, they are both independent and running in two different environments. It makes sense to have both running in a single target (platform).
+
+The name of the webservice is hardcoded in various places of the git repository, and the azure pipelines. It could be set more efficiently if we could leverage some kind of variables.
 
 Also, since the Flask ML API is in a docker container, it may be more beneficial to run in a kubernetes environment, for production purpose, which could increase the reliability and scalability of the numbers of containers. 
 Having a N+1 architecture could protect the app from failures. Also, having the capability of having a blue/green mechanism, could manage versioning of the app.
