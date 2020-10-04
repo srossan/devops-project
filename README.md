@@ -24,9 +24,8 @@ Please find the URLs for the trello kanban board and the Google Spreadsheet belo
 A Continous Integration (CI) pipeline is set in Github Actions.
 
 * Setup in Azure Cloud Shell
-Captured the history commands to show what was done to setup the environment (ssh keys were already setup in the github repository).
 
-![history](https://github.com/srossan/devops-project/blob/master/images/devops-proj-setup.png)
+![setup](https://github.com/srossan/devops-project/blob/master/images/Azure-Cloud-Shell-git_clone.png)
 
 * Setup of the python virtual machine
 
